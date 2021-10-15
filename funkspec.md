@@ -4,19 +4,29 @@
 
 ## 2. Vágyott rendszer
 
+(ugyan az mint a kövspec csak a kivitelező szemszögéből)
+
 
 ## 3. Jelenlegi üzleti folyamatok
 
-### 3.1 Klienssel való kommunikáció
+
+(ugyan az mint a kövspec csak a kivitelező szemszögéből)
+
 
 
 ## 4. Igényelt üzleti folyamatok
 
+(ugyan az mint a kövspec csak a kivitelező szemszögéből)
+
 
 ## 5. Rendszerre vonatkozó szabályok
 
+(ugyan az mint a kövspec csak a kivitelező szemszögéből)
+
 
 ## 6. Követelménylista
+
+(ugyan az mint a kövspec csak a kivitelező szemszögéből)
 
 
 ## 7. Használati esetek
