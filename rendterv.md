@@ -70,12 +70,31 @@
 
 ## 6. Fizikai környezet
 
-(miket használunk?s)
+A projekt megvalósítási szempontból egy Discord-bot, ami azt jelenti hogy szükséges hozzá egy állandó host. Ezt a projekt fejlesztési fázisában nagy valószínűséggel egy lokális gép lesz, viszont az üzemeltetési fázisban ez erősen lehetséges hogy a Cloud-on keresztül lesz megvalósítva. Erre több ok is van, mint például a projekt alacsony erőforrás-igénye és 24/7 elérhetőségi szükséglete.
+
+* A kliens által biztosított eszközök:
+    - Discord-szerver
+* Fejlesztők által használt eszközök, technológiák:
+    - Git
+    - Visual Studio Code
+    - Microsoft Paint
+    - PyCharm IDE
+* Tesztelt környezetek:
+    - Asztali Discord alkalmazás
+    - Mobilos Discord alkalmazás
+    - Webes Discord oldal
+* Futási környezetek:
+    -Lokális gép
+    -Microsoft Azure/Amazon EC2 (lehetséges, a jövőben)
 
 
 ## 7. Absztrakt domain modell
 
-(hiearchia, mit mi ad és hova)
+A rendszer megjelenítését a Discord-alkalmazás beépített formázási, képmegjelenítési eszközein keresztül valósul meg.
+
+
+![Domain modell gráf](/img/domainmodell.png)
+
 
 ## 8. Architekturális terv
 
