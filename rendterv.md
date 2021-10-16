@@ -84,8 +84,8 @@ A projekt megvalósítási szempontból egy Discord-bot, ami azt jelenti hogy sz
     - Mobilos Discord alkalmazás
     - Webes Discord oldal
 * Futási környezetek:
-    -Lokális gép
-    -Microsoft Azure/Amazon EC2 (lehetséges, a jövőben)
+    - Lokális gép
+    - Microsoft Azure/Amazon EC2 (lehetséges, a jövőben)
 
 
 ## 7. Absztrakt domain modell
