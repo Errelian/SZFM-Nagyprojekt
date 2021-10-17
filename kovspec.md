@@ -37,7 +37,11 @@ A Bot működjön a JózsefJónás discord-szerver hálózat bármely szerverén
 ## 6 Követelménylista
 
 [K01] Specifikus szerver-függetlenség.
+
 [K02] Erőforrás-hatékonyság.
+
 [K03] Könnyű kezelhetőség.
+
 [K04] Fair levezetés.
+
 [K05] Szabályos levezetés.
