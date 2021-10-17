@@ -1,26 +1,26 @@
-#Discord Bot követelmény specifikáció
+# Discord Bot követelmény specifikáció
 
-##1 Jelenlegi Helyzet
+## 1 Jelenlegi Helyzet
 
 A JózsefJónás Discord-szerver számtalan felhasználóval rendelkezik, akik gyakran ismerkedés érdekében kölünböző játékokat szeretnének játszani egymással, de a jelenleg ezt csak harmadik féltől származó oldalakon, és alkalmazások segítségével tudják megvalósítani. Ez lehetősen megnehezíti a pontszámok esetleges nyilvántartását, és az esetleges alkalmazás váltások erősen lelassítják az egész folyamatot.
 
-##2 Vágyott Helyzet
+## 2 Vágyott Helyzet
 
 A JózsefJónás Discord-szerver számtalan felhasználója a szerverre integrált ún. "Bot"-on keresztül játszanák le a játékaikat. Ezen a boton keresztüla felhasználók letudnák bonyolítani a játékaikat, a bot egyértelműen eldöntené a győztest, és a győztest félt egy profilhoz kötné, ezzel megakadályozva a csalást.
 
-##3 Jelenlegi üzleti folyamatok
+## 3 Jelenlegi üzleti folyamatok
 
-###3.1 Játék kezdeményezés
+### 3.1 Játék kezdeményezés
 
 Két ismerkedő felhasználónk szeretne közösön játszani egy játékot -> Felkeresnek egy külső alkalmazást vagy oldalt amely biztosítja ezen játékot -> A felhasználók regisztrálnak és/vagy letöltik az alkalmazást. -> Lejátszák a kívánt játékot. -> A felhasználó kevésbe kötődik a JózsefJónás szerverhez.
 
-##4 Igényelt üzleti folyamat
+## 4 Igényelt üzleti folyamat
 
-###4.1 Játék kezdeményezés
+### 4.1 Játék kezdeményezés
 
 Két ismerkedő felhasználónk szeretne közösön játszani egy játékot -> Chat-parancsal meghívják a szerver által hostolt Bot-ot. -> Lejátszák a játékot, amit a Bot levezet. ->A felhasználó jobban kötődik a szervehez.
 
-##5 A Rendszerre vonatkozó szabályok
+## 5 A Rendszerre vonatkozó szabályok
 
 A Bot fusson a Discord chat-alkalmazás szerverein.
 
@@ -34,7 +34,7 @@ A Bot képes legyen gépi ellenfélként játszani a legegyszerűbb játékokat.
 
 A Bot működjön a JózsefJónás discord-szerver hálózat bármely szerverén.
 
-##6 Követelménylista
+## 6 Követelménylista
 
 [K01] Specifikus szerver-függetlenség.
 [K02] Erőforrás-hatékonyság.
