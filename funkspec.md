@@ -33,7 +33,7 @@ A bot legyen felhasználóbarát, egyszerű parancsokkal kezelhető. Alapvető f
 
 ## 7. Használati esetek
 
-Ki fogja használni és mire?
+A szerver tagjai minden olyan esetben meghívhatják a botot, amikor baráti mérkőzést szeretnének játszani társaikkal. Esetenként, amennyiben több felhasználó is jelentkezik, versenyt indíthatnak melynek végén egyetlen győztes felhasználó kerül feljegyzésre a ranglistában.
 
 ## 8. Képernyőtervek
 
@@ -41,4 +41,13 @@ Ki fogja használni és mire?
 
 ## 9.Forgatókönyvek
 
-Az összes elképzelhető mód ahogy használhatja a felhasználó a projektet.
+A Discord szerver tagjai igényük szerint hívhatják meg a botot, az erre megfelelő parancs segítségével. A játék használata az alábbiak szerint csoportosítható:
+
+### 9.1 Exhibition game
+Barátságos mérkőzés két tag között.
+
+### 9.2 Competitive game
+Éles mérkőzés két tag között. Az eredmények elmentésre kerülnek
+
+### 9.23 Tournament
+Éles mérkőzés, szerver szinten. Az eredmények mentésre kerülnek, felmenő rendszerben jutnak tovább a játékosok, a végén egyetlen győztessel. A játszma nyilvános a szerver többi tagja számára, valós időben követhető.
