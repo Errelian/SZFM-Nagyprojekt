@@ -98,7 +98,13 @@ A rendszer megjelenítését a Discord-alkalmazás beépített formázási, kép
 
 ## 8. Architekturális terv
 
-(mi mire alapszik, hova küld dolgokat?)
+A rendszer architektúrája nagyon egyszerű, ami az ADM-ből is látszik: Mindössze két réteget kezel a projekt.
+
+Első réteg: A discord-oldali réteg, ez kezeli a bementek gyújtését, a kimenetek megjelenítését, és összeségében a felhasználóval való kommunikációt.ű
+
+Második-réteg: A Backend réteg, ez kezeli a játék-logikákat, az adatbázis kezelését, és persze a frontend-el való kommunikációt. 
+
+Ezen rétegek közötti kapcsolatok leolvashatóak az ADM-ből.
 
 ## 9. Adatbázisterv
 
