@@ -1,6 +1,6 @@
 ## 1. Jelenlegi helyzet
 
-(ugyan az mint a kövspec csak a kivitelező szemszögéből)
+A JózsefJónás Discord-szerver felhasználói jelenleg csak harmadik féltől származó játékokat tudnak igénybe venni. Ezek gyakran addicionális regisztrációhoz kötöttek, és előfordul, hogy egy kedvelt játékot hostoló szerver ideiglenesen, vagy véglegesen nem elérhető. A felhasználók számára fontos, hogy a játékok eredményei naplózva is legyenek, melyeket könnyen el szeretnének érni. Ezentúl fontos még a lehető legmagasabb rendelkezésre állás biztosítása is.
 
 ## 2. Vágyott rendszer
 
