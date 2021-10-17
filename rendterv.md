@@ -108,12 +108,17 @@ Ezen rétegek közötti kapcsolatok leolvashatóak az ADM-ből.
 
 ## 9. Adatbázisterv
 
-(lesz-e adatbázis, és ha igen, milyen?)
+A projekt rendelkezni fog egy alapszintű adatbázissal, ami tárolni fogja a felhasználók hány éles játékot játszottak, ki elllen, és azoknak a kimenetelét.
+
+Az adatbázis több táblával fog rendelkezni:
+
+* Minden játék elmenti az abban lejátszott összes mérkőzést, hogy kik között játszódott le, és mi annak a kimenetele.
+
+* Lesz egy külön játékos adattábla is, amely tárolni fogja az összes játékos adatatait egy-egy sorban: Milyen jáékból, hány mérkőzést játszottek, ebből hány nyert, döntetlen, és vesztett volt.
 
 ## 10. Implementációs terv
 
 (az osztályok és köztük lévő kapcsolatok)
-
 
 ## 11. Teszt tervek
 
