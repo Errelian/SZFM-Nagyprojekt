@@ -112,7 +112,7 @@ A projekt rendelkezni fog egy alapszintű adatbázissal, ami tárolni fogja a fe
 
 Az adatbázis egy táblával fog rendelkezni:
 
-* Lesz egy külön játékos adattábla is, amely tárolni fogja az összes játékos adatatait egy-egy sorban: Milyen jáékból, hány mérkőzést játszottek, ebből hány nyert, döntetlen, és vesztett volt.
+* Lesz egy játékos adattábla, amely tárolni fogja az összes játékos adatatait egy-egy sorban: Milyen jáékból, hány mérkőzést játszottek, ebből hány nyert, döntetlen, és vesztett volt.
 
 ## 10. Implementációs terv
 
