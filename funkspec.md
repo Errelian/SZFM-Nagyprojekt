@@ -4,7 +4,9 @@
 
 ## 2. Vágyott rendszer
 
-(ugyan az mint a kövspec csak a kivitelező szemszögéből)
+A JózsefJónás Discord-szerver tagjainak célja, hogy az összes tag számára hozzáférhető legyen egy olyan integrált megoldás, melynek segítségével könnyen, átirányításoktól és regisztrációktól mentesen játszhatnak egymás ellen.
+
+A bot legyen felhasználóbarát, egyszerű parancsokkal kezelhető. Alapvető feltétel, a könnyebb játszhatóság, és nagyobb mértékű interakció eléréséhez, hogy a játék ún. "emote"-okkal irányítható lehessen.
 
 
 ## 3. Jelenlegi üzleti folyamatok
