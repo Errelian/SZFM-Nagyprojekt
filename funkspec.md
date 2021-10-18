@@ -51,7 +51,7 @@ A Bot a játékok levezetése során kövesse a megadott szabályrendszert, műk
 
 A Bot az eredményeket megbízhatóan és pontosan tárolja.
 
-A Bot gépi ellenfélként is tudjon viselkedni, ha szükséges. 
+A Bot gépi ellenfélként is tudjon viselkedni, ha szükséges.
 
 
 ## 7. Használati esetek
@@ -64,4 +64,12 @@ A szerver tagjai minden olyan esetben meghívhatják a botot, amikor baráti mé
 
 ## 9.Forgatókönyvek
 
-A Discord szerver tagjai igényük szerint hívhatják meg a botot, az erre megfelelő parancs segítségével. Ekkor a kiválasztott ellenfél játékos értesítést kap, hogy meghívták egy mérkőzésre.
+A Discord szerver tagjai igényük szerint hívhatják meg a botot, az erre megfelelő parancs segítségével. Az adott játék kiválasztása a "/" karakter után írt paranccsal történik. pl.:
+```
+/chess
+```
+```
+/tic-tac-toe
+```
+
+ Ekkor a kiválasztott ellenfél játékos értesítést kap, hogy meghívták egy mérkőzésre. Amennyiben elfogadja, megkezdődik a játék. Sakk esetében a kezdőjátékos találomra kerül kisorsolásra.
