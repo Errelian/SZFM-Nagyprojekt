@@ -11,12 +11,9 @@ A bot legyen felhasználóbarát, egyszerű parancsokkal kezelhető. Alapvető f
 
 ## 3. Jelenlegi üzleti folyamatok
 
-###3.1 Játék folyamata kezdeményezéstől utólagos összehasonlításig
+### 3.1 Játék kezdeményezés
 
-A szerver egy-egy felhasználója megkeres egy másik felhasználót, és kihívja egy mérkőzésre. 
-Ezt a mérkőzést csak külső féltől származó oldalakon tudják megtenni, ez viszont külső, nem teljesen biztonságos linkek küldését, az ottani regisztrációt, vagy asztali alkalmazás előzetes letöltését igényli. Ha ez nincs letöltve, vagy még nem regisztáltunk, a játék ideje meghosszabbodik, amíg ezek a feltételek megtörténnek. 
-Utólagos felhasználó összehasonlításra (pontszámok, nyerés-vereség arányok) nem állnak egyből rendelkezésre, ezért azt szintén újabb alkalmazásban tárolják.
-
+A JózsefJónás Discord-szerver két tagja megbeszélik közösen, hogy milyen játékot szeretnének játszani. Ha a szerveren még nem elérhető az adott játék, akkor egyéb, külső forrásból beszerzik azt, majd lejátsszák az adott játékot. Ekkor a legtöbb esetben már nem a szerver szolgáltatásain keresztül történik a köztük lévő kommunikáció, aminek következtében csökken a szerveraktivitás, a tagok kevésbé kötődnek a szerverhez, illetve a leendő tagok számára kevésbé lesz vonzó a szerverhez való csatlakozás.
 
 ## 4. Igényelt üzleti folyamatok
 
