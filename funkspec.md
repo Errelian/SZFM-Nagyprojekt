@@ -13,7 +13,11 @@ A bot legyen felhasználóbarát, egyszerű parancsokkal kezelhető. Alapvető f
 
 ### 3.1 Játék kezdeményezés
 
-A JózsefJónás Discord-szerver két tagja megbeszélik közösen, hogy milyen játékot szeretnének játszani. Ha a szerveren még nem elérhető az adott játék, akkor egyéb, külső forrásból beszerzik azt, majd lejátsszák az adott játékot. Ekkor a legtöbb esetben már nem a szerver szolgáltatásain keresztül történik a köztük lévő kommunikáció, aminek következtében csökken a szerveraktivitás, a tagok kevésbé kötődnek a szerverhez, illetve a leendő tagok számára kevésbé lesz vonzó a szerverhez való csatlakozás.
+A JózsefJónás Discord-szerver két tagja megbeszéli közösen, hogy milyen játékot szeretnének játszani. Ha a szerveren még nem elérhető az adott játék, akkor egyéb, külső forrásból beszerzik azt - ez általában egy külső alkalmazás, vagy egy weboldal. Ezek után lejátsszák az általuk áhított meccse\(ke\)t.
+
+Ekkor a legtöbb esetben már nem a szerver szolgáltatásain keresztül történik a köztük lévő kommunikáció, hanem magánbeszélgetést folytatnak.
+Ennek következtében csökken a szerveraktivitás, hiszen nem a szerveren belül folyik a játék és a kommunikáció, így a többi tag egyfelől kimarad a közös játékélményből, másrészt az esetek többségében nem alakul ki beszélgetés, amelynek az apropója az adott játék lenne.
+Mindemellett a tagok kevésbé kötődnek a szerverhez, hiszen kevesebb időt töltenek ott, illetve a leendő tagok számára kevésbé lesz vonzó a szerverhez való csatlakozás, hiszen alacsony lesz a szerveraktivitás.
 
 ## 4. Igényelt üzleti folyamatok
 
