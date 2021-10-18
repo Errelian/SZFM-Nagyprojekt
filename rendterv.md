@@ -1,52 +1,106 @@
-# Számrendszer átalakító rendszerterv
+# Discord Bot rendszerterv
 
 ## 1. A rendszer célja
 
-(mit, miért)
+A Discord játékbot a harmadik fél, illetve külső alkalmazásoktól való függést hivatott felváltani az esetleges játékok keretében.
+Ezáltal nincs szüksége a felhasználóknak külső oldalakra regisztrálni mivel a naplózások direkt a felhasználókhoz kötődnek,
+amiket bármikor meg lehet tekinteni és nem kell tartani a külső játékokat hostoló szerverek ideiglenes vagy végleges megszünésétől. 
 
 ## 2. A projekt terve
 
-(kik, mit, és hogyan csinálnak?)
+A fejlesztők csapata öt személyből áll, mindenki saját felelőségekkel rendelkezik:
+* Vas Ruben Levente
+* Somogyi Viktória
+* Görög Balázs
+* Pintér Balázs
+* Béres Dániel Csaba
+
+A fejlesztők csapata a saját, általuk biztosított gépeken fogják végezni a fejlesztést
 
 ### 2.1 Mérföldkövek
 
-(mik a nagy mérföldkövei a projektnek?)
+[01] Feladatok kiosztása, szerepek meghatározása.
+
+[02] A Discord Bot UI/kezelőfelületének megtervezése.
+
+[03] A Discdord Bot funkciónak implementációja.
+
+[04] A Discord Bot integrációja a szerverhez.
+
+[05] A Discord Bot megfelelő mértékű tesztelése a kívánt környezetekben.
 
 ### 2.2 Ütemterv
 
-(milyen sorrendben akarjuk a mérföldköveket?)
+1: [01] Elérése, ez egy közös megbeszélés útján történik meg.
+
+2: [02] Elérése, ez közös megegyezése útján valósul meg.
+
+3: [03] Elérése, a Backend fejlesztők felelőssége.
+
+4: [04] Elérése, ez a fejlesztők közös munkáján keresztül valósul meg, amit egy közös megbeszélés előz meg.
+
+5  [05] Elérése, ami a Tesztelő felelőssége, megvalósítása meg a különböző Discord szervereken keresztüli teszteléssel valósul meg.
 
 ## 3. Modell az üzleti folyamatokhoz
 
 ### 3.1.1. Szereplők:
- (kik használják?)
+ * Discord Felhasználó
 
 ### 3.1.2. Erőforrások:
- (miket használ?)
+ * Bármilyen eszköz, amely képes a Discord alkalmazás futtatására.
+ * Szervergép
+ * Hálózati kapcsolat
 
 ### 3.1.3. Bemenetek:
- 
+ * Parancsok
+ * Emote-ok
 
 ### 3.1.4. Entitások:
- (a bot)
+ * Discord Bot
 
 ### 3.1.5. Kimenet:
- 
+ * Játékállás
+ * Leíró adatok
+
 ### 3.1.6. Folyamat:
 
-(hogyan használjá?)
+Egy Discord felhasználó játszani szeretne egy közösségi Discord szerveren -> Paranccsal meghívja a kívánt Bot-ot -> A Bot leellenőrzi, hogy az adott felhasználó már játákban van-e.
+
+Ha igen: akkor nem léphet új játékba.
+
+Ha, nem: Új játékba lép a felhasználó -> Befolyásolhatja a játékot emote-okkal -> Nyerhet, vagy fel is adhatja a játékot a megfelelő bevitel segítségével -> Véget ér a játék -> Az eredmény és a felhasználó adatai a játék szempontjából naplzásra kerül késöbbi megtekintésre.
 
 ### 3.1.7: Folyamatábra:
 
-(folyamatábra)
+![Folyamatábra](/img/rendterv_folyamatabra.png)
 
 ### 3.1.8: Példa:
 
-(példa)
+Egy Discord felhasználó szeretne egyett sakkozni, a Magyar Sakkszüvettség Discord szerverén. Meghívja egy paranccsal a Bot-ot, és ha még nincs játákéban egy új játékpartiba fog kerülni. Emote-ok segítségével mozgatja a felhasználó a bábuit majd ügyesen megnyeri a partit. Ezek után a felhasználó adataihoz kapcsolódóan a Bot naplózza a játék kimenetelét.  
 
 ## 4. Követelmények
 
-(Az előző dokumentumok követelményeinek magyarázata.) 
+Az előző dokumentumok követelményeinek magyarázata.
+
+# [K01] Specifikus szerver-függetlenség
+
+A bot, Discord-szervertől függetlenül, képes ellátni a feladatait. 
+
+# [K02] Erőforrás-hatékonyság
+
+A bot kis erőforrás-igényű, letisztult és a folyamtok mögötti számítási folyamatok optimalizáltak. 
+
+# [K03] Könnyű kezelhetőség
+
+A bot megjelenése letisztult, használata egyszerű, csak olyan funkciókat tartalmaz, ami szükséges a játékok lebonyolítására és azok naplzásaa.
+
+# [K04] Fair levezetés
+
+A bot mögötti működési és naplózási folyamatok szabályosak és teszteltek, így garantálható a kivételezés nélküliség és a csalás.
+
+# [K05] Szabályos levezetés
+
+A bot mögötti levezetési folyamatok szabályosak és teszteltek, így garantálható a szabályos játék.
 
 
 ## 5. Funkcionális terv
