@@ -36,7 +36,7 @@ A szerver tagjai minden olyan esetben meghívhatják a botot, amikor baráti mé
 
 ## 8. Képernyőtervek
 
-![Képernyőterv](/img/discord_bot_sketch_up.png)
+![Képernyőterv](/img/discord_bot_sketch.png)
 
 ## 9.Forgatókönyvek
 
