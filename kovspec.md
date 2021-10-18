@@ -4,9 +4,19 @@
 
 A JózsefJónás Discord-szerver számtalan felhasználóval rendelkezik, akik gyakran ismerkedés érdekében kölünböző játékokat szeretnének játszani egymással, de a jelenleg ezt csak harmadik féltől származó oldalakon, és alkalmazások segítségével tudják megvalósítani. Ez lehetősen megnehezíti a pontszámok esetleges nyilvántartását, és az esetleges alkalmazás váltások erősen lelassítják az egész folyamatot.
 
+Felméréseink szerint, ezen okokból sokat esik a felhasználói elégedettség a felhasználóink szavait idézve természetesen.
+
+Jelenleg a legjátszottab,legnépszerűbb játékok:
+  * Sakk
+  * Amőba (3x3, 5x5)
+
 ## 2 Vágyott Helyzet
 
-A JózsefJónás Discord-szerver számtalan felhasználója a szerverre integrált ún. "Bot"-on keresztül játszanák le a játékaikat. Ezen a boton keresztül a felhasználók letudnák bonyolítani a játékaikat, a bot egyértelműen eldöntené a győztest, és a győztest félt egy profilhoz kötné, ezzel megakadályozva a csalást.
+A JózsefJónás Discord-szerver számtalan felhasználója a szerverre integrált ún. "Bot"-on keresztül játszanák le a játékaikat. Ezen a boton keresztül a felhasználók letudnák bonyolítani a játékaikat, a bot egyértelműen eldöntené a győztest, és a győztest félt egy profilhoz kötné, ezzel megakadályozva a csalást. A bot továbbá lementené minden játékos győzelmeit más játékosok ellen, játékra lebontva.
+
+A vágyott, automatizált játékok:
+  * Sakk
+  * Amőba (3x3, 5x5)
 
 ## 3 Jelenlegi üzleti folyamatok
 
@@ -18,7 +28,11 @@ Két ismerkedő felhasználónk szeretne közösön játszani egy játékot -> F
 
 ### 4.1 Játék kezdeményezés
 
-Két ismerkedő felhasználónk szeretne közösön játszani egy játékot -> Chat-paranccsal meghívják a szerver által hostolt Bot-ot. -> Lejátsszák a játékot, amit a Bot levezet. ->A felhasználó jobban kötődik a szerverhez.
+Két ismerkedő felhasználónk szeretne közösön játszani egy játékot ->
+Chat-paranccsal meghívják a szerver által hostolt Bot-ot. -> 
+Lejátsszák a játékot, amit a Bot levezet. -> 
+A bot lementi a végeredményt ->
+A felhasználó jobban kötődik a szerverhez.
 
 ## 5 A Rendszerre vonatkozó szabályok
 
