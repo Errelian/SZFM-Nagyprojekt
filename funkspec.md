@@ -11,10 +11,9 @@ A bot legyen felhasználóbarát, egyszerű parancsokkal kezelhető. Alapvető f
 
 ## 3. Jelenlegi üzleti folyamatok
 
+### 3.1 Játék kezdeményezés
 
-(ugyan az mint a kövspec csak a kivitelező szemszögéből)
-
-
+A JózsefJónás Discord-szerver két tagja megbeszélik közösen, hogy milyen játékot szeretnének játszani. Ha a szerveren még nem elérhető az adott játék, akkor egyéb, külső forrásból beszerzik azt, majd lejátsszák az adott játékot. Ekkor a legtöbb esetben már nem a szerver szolgáltatásain keresztül történik a köztük lévő kommunikáció, aminek következtében csökken a szerveraktivitás, a tagok kevésbé kötődnek a szerverhez, illetve a leendő tagok számára kevésbé lesz vonzó a szerverhez való csatlakozás.
 
 ## 4. Igényelt üzleti folyamatok
 

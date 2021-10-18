@@ -6,19 +6,19 @@ A JózsefJónás Discord-szerver számtalan felhasználóval rendelkezik, akik g
 
 ## 2 Vágyott Helyzet
 
-A JózsefJónás Discord-szerver számtalan felhasználója a szerverre integrált ún. "Bot"-on keresztül játszanák le a játékaikat. Ezen a boton keresztüla felhasználók letudnák bonyolítani a játékaikat, a bot egyértelműen eldöntené a győztest, és a győztest félt egy profilhoz kötné, ezzel megakadályozva a csalást.
+A JózsefJónás Discord-szerver számtalan felhasználója a szerverre integrált ún. "Bot"-on keresztül játszanák le a játékaikat. Ezen a boton keresztül a felhasználók letudnák bonyolítani a játékaikat, a bot egyértelműen eldöntené a győztest, és a győztest félt egy profilhoz kötné, ezzel megakadályozva a csalást.
 
 ## 3 Jelenlegi üzleti folyamatok
 
 ### 3.1 Játék kezdeményezés
 
-Két ismerkedő felhasználónk szeretne közösön játszani egy játékot -> Felkeresnek egy külső alkalmazást vagy oldalt amely biztosítja ezen játékot -> A felhasználók regisztrálnak és/vagy letöltik az alkalmazást. -> Lejátszák a kívánt játékot. -> A felhasználó kevésbe kötődik a JózsefJónás szerverhez.
+Két ismerkedő felhasználónk szeretne közösön játszani egy játékot -> Felkeresnek egy külső alkalmazást vagy oldalt amely biztosítja ezen játékot -> A felhasználók regisztrálnak és/vagy letöltik az alkalmazást. -> Lejátsszák a kívánt játékot. -> A felhasználó kevésbe kötődik a JózsefJónás szerverhez.
 
 ## 4 Igényelt üzleti folyamat
 
 ### 4.1 Játék kezdeményezés
 
-Két ismerkedő felhasználónk szeretne közösön játszani egy játékot -> Chat-parancsal meghívják a szerver által hostolt Bot-ot. -> Lejátszák a játékot, amit a Bot levezet. ->A felhasználó jobban kötődik a szervehez.
+Két ismerkedő felhasználónk szeretne közösön játszani egy játékot -> Chat-paranccsal meghívják a szerver által hostolt Bot-ot. -> Lejátsszák a játékot, amit a Bot levezet. ->A felhasználó jobban kötődik a szerverhez.
 
 ## 5 A Rendszerre vonatkozó szabályok
 
