@@ -166,11 +166,31 @@ A projekt rendelkezni fog egy alapszintű adatbázissal, ami tárolni fogja a fe
 
 Az adatbázis egy táblával fog rendelkezni:
 
-* Lesz egy játékos adattábla, amely tárolni fogja az összes játékos adatatait egy-egy sorban: Milyen jáékból, hány mérkőzést játszottek, ebből hány nyert, döntetlen, és vesztett volt.
+* Lesz egy játékos adattábla, amely tárolni fogja az összes játékos adatatait egy-egy sorban: Milyen játékból, hány mérkőzést játszottek, ebből hány nyert, döntetlen, és vesztett volt.
 
 ## 10. Implementációs terv
 
-(az osztályok és köztük lévő kapcsolatok)
+A projekt több, fő osztállyal fog rendelkezni: 
+
+ * DiscordUserInterface: Ez osztály kezeli le a felhasználóval való kommunikációt. Input/Output osztály.
+   * Kommunikáció: 
+     * Megjelenítendő képet kap az DiscordGameDisplayFactory osztálytól.
+     * User input felparsolása után meghívja a megfelelő Logic osztályt.
+ * DiscordGameDisplayFactory: Ez az osztály hozza létre a GameState-ek (JátékÁllapot-ok) grafikus megjelenítését.
+   * Kommunikáció:
+     * Megjelenítendő képet küld a DiscordUserInterface osztálynak.
+     * GameState-t kap a [] osztálytól
+ * DiscordGameLogic-osztályok: Ez valójában osztályok egy csoportja, amely a játékok és különböző funkcionalitások logikáját kezeli le.
+   * Kommunikáció:
+     * User inputot kap a DiscordUserInterface osztálytól.
+     * GameState-et küld a DiscordGameDisplayFactory osztálynak.
+     * A játék kimenetelést elküldi az DiscordGameRecordDatabase.
+ * DiscordGameRecordDatabase: Az adatbázis kezelésért felelős osztály.
+   * Kommunikáció:
+     * Játék eredményt kap a DiscordGameLogic osztálytól
+     * Adatbázis-adatokat küld a DiscordUserInterface osztálynak
+
+![Gráf-ábra](/img/implementationplan.png)
 
 ## 11. Teszt tervek
 
