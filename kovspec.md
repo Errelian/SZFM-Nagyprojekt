@@ -22,16 +22,30 @@ A vágyott, automatizált játékok:
 
 ### 3.1 Játék kezdeményezés
 
-Két ismerkedő felhasználónk szeretne közösön játszani egy játékot -> Felkeresnek egy külső alkalmazást vagy oldalt amely biztosítja ezen játékot -> A felhasználók regisztrálnak és/vagy letöltik az alkalmazást. -> Lejátsszák a kívánt játékot. -> A felhasználó kevésbe kötődik a JózsefJónás szerverhez.
+Két ismerkedő felhasználónk szeretne közösön játszani egy játékot -> 
+
+Felkeresnek egy külső alkalmazást vagy oldalt amely biztosítja ezen játékot -> 
+
+A felhasználók regisztrálnak és/vagy letöltik az alkalmazást. ->
+
+Lejátsszák a kívánt játékot. ->
+
+Az eredmény nem kerül lokálisan lementésre ->
+
+A felhasználó kevésbe kötődik a JózsefJónás szerverhez.
 
 ## 4 Igényelt üzleti folyamat
 
 ### 4.1 Játék kezdeményezés
 
 Két ismerkedő felhasználónk szeretne közösön játszani egy játékot ->
+
 Chat-paranccsal meghívják a szerver által hostolt Bot-ot. -> 
+
 Lejátsszák a játékot, amit a Bot levezet. -> 
+
 A bot lementi a végeredményt ->
+
 A felhasználó jobban kötődik a szerverhez.
 
 ## 5 A Rendszerre vonatkozó szabályok
