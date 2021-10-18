@@ -190,7 +190,7 @@ A projekt több, fő osztállyal fog rendelkezni:
      * Játék eredményt kap a DiscordGameLogic osztálytól
      * Adatbázis-adatokat küld a DiscordUserInterface osztálynak
 
-![Gráf-ábra](/img/implementationplan.png)
+![Gráf-ábra](/img/implementation.png)
 
 ## 11. Teszt tervek
 
