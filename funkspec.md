@@ -17,17 +17,41 @@ A JózsefJónás Discord-szerver két tagja megbeszélik közösen, hogy milyen 
 
 ## 4. Igényelt üzleti folyamatok
 
-(ugyan az mint a kövspec csak a kivitelező szemszögéből)
+###4.1 Játék kezdeményezése és folyamata
+
+Két felhasználó eldönti, hogy szeretne közösen játszani egy játékot. -> Chat-paranccsal meghívják a server által hostolt játék-botot -> Lejátsszák a játékot, a játék-bot levezeti, új játékosoknak segít a megértésben -> Az eredményt a játék-bot eltárolja, utólag így visszanézhető és összehasonlítható. -> A felhasználó jobban élvezi a szervert, több időt tölt itt, jobban kötődik.
 
 
 ## 5. Rendszerre vonatkozó szabályok
 
-(ugyan az mint a kövspec csak a kivitelező szemszögéből)
+A Bot fusson a Discord chat-alkalmazás szerverein.
+
+A Bot képes legyen grafikusan megjeleníteni a játék állapotát.
+
+A grafikus felület legyen esztétikus.
+
+A Bot használjon viszonylag kevés erőforrást.
+
+A Bot képes legyen gépi ellenfélként játszani a legegyszerűbb játékokat.
+
+A Bot működjön a JózsefJónás discord-szerver hálózat bármely szerverén.
 
 
 ## 6. Követelménylista
 
-(ugyan az mint a kövspec csak a kivitelező szemszögéből)
+A Bot a Discord-szerver által legyen hostolva.
+
+A Bot ne igényeljen külön letöltést, csak meghívást a szerverre.
+
+A Bot használjon viszonylag kevés erőforrást.
+
+A Bot használata legyen egyértelmű és egyszerű.
+
+A Bot a játékok levezetése során kövesse a megadott szabályrendszert, működése legyen megbízható.
+
+A Bot az eredményeket megbízhatóan és pontosan tárolja.
+
+A Bot gépi ellenfélként is tudjon viselkedni, ha szükséges. 
 
 
 ## 7. Használati esetek
