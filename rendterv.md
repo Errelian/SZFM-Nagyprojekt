@@ -179,7 +179,7 @@ A projekt több, fő osztállyal fog rendelkezni:
  * DiscordGameDisplayFactory: Ez az osztály hozza létre a GameState-ek (JátékÁllapot-ok) grafikus megjelenítését.
    * Kommunikáció:
      * Megjelenítendő képet küld a DiscordUserInterface osztálynak.
-     * GameState-t kap a [] osztálytól
+     * GameState-t kap a DiscordGameLogic osztálytól
  * DiscordGameLogic-osztályok: Ez valójában osztályok egy csoportja, amely a játékok és különböző funkcionalitások logikáját kezeli le.
    * Kommunikáció:
      * User inputot kap a DiscordUserInterface osztálytól.
