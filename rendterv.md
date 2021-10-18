@@ -177,7 +177,7 @@ Az adatbázis egy táblával fog rendelkezni:
 
 ## 12. Telepítési tervezet
 
-(hogyan kell telepíteni?)
+A megfelelő jogosultságokkal rendelkező felhasználó a fejlesztők által legenerált egyedi meghívólink segítségével hozzáadja a szerverhez a botot.
 
 ## 13. Karbantartási tervezet
 
