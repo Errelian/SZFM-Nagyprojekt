@@ -68,7 +68,7 @@ Egy Discord felhasználó játszani szeretne egy közösségi Discord szerveren 
 
 Ha igen: akkor nem léphet új játékba.
 
-Ha, nem: Új játékba lép a felhasználó -> Befolyásolhatja a játékot emote-okkal -> Nyerhet, vagy fel is adhatja a játékot a megfelelő bevitel segítségével -> Véget ér a játék -> Az eredmény és a felhasználó adatai a játék szempontjából naplzásra kerül késöbbi megtekintésre.
+Ha, nem: Új játékba lép a felhasználó -> Befolyásolhatja a játékot paranccsal, vagy emote-tal -> Nyerhet, vagy fel is adhatja a játékot a megfelelő bevitel segítségével -> Véget ér a játék -> Az eredmény és a felhasználó adatai a játék szempontjából naplzásra kerül késöbbi megtekintésre.
 
 ### 3.1.7: Folyamatábra:
 
