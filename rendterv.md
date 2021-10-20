@@ -201,4 +201,4 @@ A megfelelő jogosultságokkal rendelkező felhasználó a fejlesztők által le
 
 ## 13. Karbantartási tervezet
 
-(hogyan fogjuk működésben tartani?)
+A Discord-alkalmazás üzemeltetői elmondási szerint az ún. "Slash-command"-ok hosszú távan lesznek támogatva, ezért az alkalmazást nagy valószínűséggel csak javító-frissítésekkel kell ellátni a jövőben.
