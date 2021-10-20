@@ -21,7 +21,7 @@ Mindemellett a tagok kevésbé kötődnek a szerverhez, hiszen kevesebb időt t�
 
 ## 4. Igényelt üzleti folyamatok
 
-###4.1 Játék kezdeményezése és folyamata
+### 4.1 Játék kezdeményezése és folyamata
 
 Két felhasználó eldönti, hogy szeretne közösen játszani egy játékot. -> Chat-paranccsal meghívják a server által hostolt játék-botot -> Lejátsszák a játékot, a játék-bot levezeti, új játékosoknak segít a megértésben -> Az eredményt a játék-bot eltárolja, utólag így visszanézhető és összehasonlítható. -> A felhasználó jobban élvezi a szervert, több időt tölt itt, jobban kötődik.
 
