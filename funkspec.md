@@ -21,14 +21,22 @@ A vágyott, automatizált játékok:
 ### 3.1 Játék kezdeményezés
 
 A JózsefJónás Discord-szerver két tagja megbeszélik közösen, hogy szeretnének játszani egy mérkőzést. -> 
+
 Eldöntik, hogy milyen játékot szeretnének játszani. ->
+
 Megkereseik, hogy az adott játék milyen platformon (web-, vagy asztali akalmazás) elérhető. ->
-A két játékos időközben kénytelen a játék idejére elhagyni a szervert, hisz a játékot csak külső "helyszínen" tudják lejátszani ->
-Ekkor a legtöbb esetben már nem a szerver szolgáltatásain keresztül történik a köztük lévő kommunikáció, hanem magánbeszélgetést folytatnak. 
+
+A két játékos időközben kénytelen a játék idejére elhagyni a szervert, hisz a játékot csak külső "helyszínen" tudják lejátszani.
+Ekkor a legtöbb esetben már nem a szerver szolgáltatásain keresztül történik a köztük lévő kommunikáció, hanem magánbeszélgetést folytatnak. ->
+
 A felhasználók regisztrálnak és/vagy letöltik az alkalmazást. ->
+
 Lejátsszák a kiválasztott játékot. ->
+
 A játék befejeztével a játék eredménye nem kerül lokálisan elmentésre, az eredmény lényegében elveszett. ->
+
 A felhasználó összességében kevésbé kötődik a JózsefJónás szerverhez ->
+
 Mindennek következtében csökken a szerveraktivitás, hiszen nem a szerveren belül folyik a játék és a kommunikáció, így a többi tag egyfelől kimarad a közös játékélményből, másrészt az esetek többségében nem alakul ki beszélgetés, amelynek az apropója az adott játék lenne. Mivel nem annyira kötődik, nem fog hívni új tagokat, így nem csak a jelenlegi tagok kötődése csökken, a szerver növekedése sem történik meg, a leendő tagok számára kevésbé lesz vonzó a szerverhez való csatlakozás, hiszen alacsony lesz a szerveraktivitás.
 
 
@@ -37,11 +45,17 @@ Mindennek következtében csökken a szerveraktivitás, hiszen nem a szerveren b
 ### 4.1 Játék kezdeményezése és folyamata
 
 A JózsefJónás Discord-szerver két tagja megbeszélik közösen, hogy szeretnének játszani egy mérkőzést. -> 
+
 Eldöntik, hogy milyen játékot szeretnének játszani. ->
+
 Egyszerű chat-paranccsal meghívják a szerver által hostolt Botot ->
+
 A Bot vezetésével, egyszerű parancsokkal irányítva, lejátsszák a játékot. ->
+
 A Bot a győztes kihirdetése után lementi a végeredményt, a két játékos profiljához köti azt. ->
+
 A játékosok élvezik az egyszerű folyamatot, jobban kötődnek a szerverhez. ->
+
 A felhasználó meghívja a barátait is, a szerver növekszik.
 
 ## 5. Rendszerre vonatkozó szabályok
