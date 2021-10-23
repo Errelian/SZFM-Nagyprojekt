@@ -24,11 +24,13 @@ A JózsefJónás Discord-szerver két tagja megbeszélik közösen, hogy szeretn
 Eldöntik, hogy milyen játékot szeretnének játszani. ->
 Megkereseik, hogy az adott játék milyen platformon (web-, vagy asztali akalmazás) elérhető. ->
 A két játékos időközben kénytelen a játék idejére elhagyni a szervert, hisz a játékot csak külső "helyszínen" tudják lejátszani ->
+Ekkor a legtöbb esetben már nem a szerver szolgáltatásain keresztül történik a köztük lévő kommunikáció, hanem magánbeszélgetést folytatnak. 
 A felhasználók regisztrálnak és/vagy letöltik az alkalmazást. ->
 Lejátsszák a kiválasztott játékot. ->
 A játék befejeztével a játék eredménye nem kerül lokálisan elmentésre, az eredmény lényegében elveszett. ->
 A felhasználó összességében kevésbé kötődik a JózsefJónás szerverhez ->
-Mivel nem annyira kötődik, nem fog hívni új tagokat, így nem csak a jelenlegi tagok kötődése csökken, a szerver növekedése sem történik meg.
+Mindennek következtében csökken a szerveraktivitás, hiszen nem a szerveren belül folyik a játék és a kommunikáció, így a többi tag egyfelől kimarad a közös játékélményből, másrészt az esetek többségében nem alakul ki beszélgetés, amelynek az apropója az adott játék lenne. Mivel nem annyira kötődik, nem fog hívni új tagokat, így nem csak a jelenlegi tagok kötődése csökken, a szerver növekedése sem történik meg, a leendő tagok számára kevésbé lesz vonzó a szerverhez való csatlakozás, hiszen alacsony lesz a szerveraktivitás.
+
 
 ## 4. Igényelt üzleti folyamatok
 
@@ -75,7 +77,7 @@ A Bot a játékok levezetése során kövesse a megadott szabályrendszert, műk
 
 A Bot az eredményeket megbízhatóan és pontosan tárolja.
 
-A Bot gépi ellenfélként is tudjon viselkedni, ha szükséges. 
+A Bot gépi ellenfélként is tudjon viselkedni, ha szükséges.
 
 
 ## 7. Használati esetek
@@ -84,8 +86,16 @@ A szerver tagjai minden olyan esetben meghívhatják a botot, amikor baráti mé
 
 ## 8. Képernyőtervek
 
-(hogyan fog kinézni? sketch/html mockup)
+![Képernyőterv](/img/discord_bot_sketch.png)
 
 ## 9.Forgatókönyvek
 
-A Discord szerver tagjai igényük szerint bármikor meghívhatják a botot, az erre megfelelő parancs segítségével. Ekkor a kiválasztott ellenfél játékos értesítést kap, hogy meghívták egy mérkőzésre, ezt elfogadhatja vagy elutasíthatja.
+A Discord szerver tagjai igényük szerint hívhatják meg a botot, az erre megfelelő parancs segítségével. Az adott játék kiválasztása a "/" karakter után írt paranccsal történik. pl.:
+```
+/chess
+```
+```
+/tic-tac-toe
+```
+
+ Ekkor a kiválasztott ellenfél játékos értesítést kap, hogy meghívták egy mérkőzésre ezt elfogadhatja vagy elutasíthatja. Amennyiben elfogadja, megkezdődik a játék. Sakk esetében a kezdőjátékos találomra kerül kisorsolásra.
