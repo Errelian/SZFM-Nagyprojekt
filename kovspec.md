@@ -4,15 +4,12 @@
 
 A JózsefJónás Discord-szerver számtalan felhasználóval rendelkezik, akik gyakran ismerkedés érdekében különböző játékokat szeretnének játszani egymással, de a jelenleg ezt csak harmadik féltől származó oldalakon, és alkalmazások segítségével tudják megvalósítani. Ez jelentősen megnehezíti a pontszámok esetleges nyilvántartását, és az esetleges alkalmazás váltások erősen lelassítják az egész folyamatot.
 
-<<<<<<< Updated upstream
-=======
 Felméréseink szerint, ezen okokból sokat esik a felhasználói elégedettség a felhasználóink szavait idézve természetesen.
 
 Jelenleg a leggyakrabban játszott, legnépszerűbb játékok:
   * Sakk
   * Amőba (3x3, 5x5)
 
->>>>>>> Stashed changes
 ## 2 Vágyott Helyzet
 
 A JózsefJónás Discord-szerver számtalan felhasználója a szerverre integrált ún. "Bot"-on keresztül játszanák le a játékaikat. Ezen a boton keresztül a felhasználók letudnák bonyolítani a játékaikat, a bot egyértelműen eldöntené a győztest, és a győztest félt egy profilhoz kötné, ezzel megakadályozva a csalást.
