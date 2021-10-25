@@ -4,7 +4,7 @@
 
 A Discord játékbot a harmadik fél, illetve külső alkalmazásoktól való függést hivatott felváltani az esetleges játékok keretében.
 Ezáltal nincs szüksége a felhasználóknak külső oldalakra regisztrálni mivel a naplózások direkt a felhasználókhoz kötődnek,
-amiket bármikor meg lehet tekinteni és nem kell tartani a külső játékokat hostoló szerverek ideiglenes vagy végleges megszünésétől.
+amiket bármikor meg lehet tekinteni és nem kell tartani a külső játékokat hostoló szerverek ideiglenes, vagy végleges megszűnésétől. 
 
 ## 2. A projekt terve
 
@@ -64,11 +64,11 @@ A fejlesztők csapata a saját, általuk biztosított gépeken fogják végezni 
 
 ### 3.1.6. Folyamat:
 
-Egy Discord felhasználó játszani szeretne egy közösségi Discord szerveren -> Paranccsal meghívja a kívánt Bot-ot -> A Bot leellenőrzi, hogy az adott felhasználó már játákban van-e.
+Egy Discord felhasználó játszani szeretne egy közösségi Discord szerveren -> Paranccsal meghívja a kívánt Bot-ot -> A Bot leellenőrzi, hogy az adott felhasználó már játékban van-e.
 
 Ha igen: akkor nem léphet új játékba.
 
-Ha, nem: Új játékba lép a felhasználó -> Befolyásolhatja a játékot paranccsal, vagy emote-tal -> Nyerhet, vagy fel is adhatja a játékot a megfelelő bevitel segítségével -> Véget ér a játék -> Az eredmény és a felhasználó adatai a játék szempontjából naplzásra kerül késöbbi megtekintésre.
+Ha, nem: Új játékba lép a felhasználó -> Befolyásolhatja a játékot paranccsal, vagy emote-tal -> Nyerhet, vagy fel is adhatja a játékot a megfelelő bevitel segítségével -> Véget ér a játék -> Az eredmény és a felhasználó adatai a játék szempontjából naplózásra kerül későbbi megtekintésre.
 
 ### 3.1.7: Folyamatábra:
 
@@ -76,7 +76,7 @@ Ha, nem: Új játékba lép a felhasználó -> Befolyásolhatja a játékot para
 
 ### 3.1.8: Példa:
 
-Egy Discord felhasználó szeretne egyett sakkozni, a Magyar Sakkszüvettség Discord szerverén. Meghívja egy paranccsal a Bot-ot, és ha még nincs játákéban egy új játékpartiba fog kerülni. Emote-ok segítségével mozgatja a felhasználó a bábuit majd ügyesen megnyeri a partit. Ezek után a felhasználó adataihoz kapcsolódóan a Bot naplózza a játék kimenetelét.  
+Egy Discord felhasználó szeretne egyet sakkozni, a Magyar Sakkszövetség Discord szerverén. Meghívja egy paranccsal a Bot-ot, és ha még nincs játékban, akkor egy új játékpartiba fog kerülni. Emote-ok segítségével mozgatja a felhasználó a bábuit, majd ügyesen megnyeri a partit. Ezek után a felhasználó adataihoz kapcsolódóan a Bot naplózza a játék kimenetelét.  
 
 ## 4. Követelmények
 
@@ -128,7 +128,7 @@ A pontszámítás az alábbiak szerint alakul:
 
 #### 5.3.1. A Funkcionalitás leírása
 
-Adott a Discord-szerveren meghívható sakk/amőba bot, mely emoteokkal irányítható. A sakk esetében a háttérben egy Pythonban írt algoritmus felel a lépések validálásáért, a bábuk közötti interakcióért (leütés, csere), illetve a speciális lépések megvalósításáért pl.: Sáncolás.
+Adott a Discord-szerveren meghívható sakk/amőba bot, mely emote-okkal irányítható. A sakk esetében a háttérben egy Pythonban írt algoritmus felel a lépések validálásáért, a bábuk közötti interakcióért (leütés, csere), illetve a speciális lépések megvalósításáért pl.: Sáncolás.
 
 Az amőba esetén a háttérben futó Python script dolga eldönteni, hogy a játék három lehetséges kimeneti állapota közül melyik valósult meg (Játékos 1 győz, Játékos 2 győz, Döntetlen). Ezentúl az adott lépést megtenni képes játékosok váltakozásáért felel.
 
@@ -169,19 +169,19 @@ A rendszer megjelenítését a Discord-alkalmazás beépített formázási, kép
 
 A rendszer architektúrája nagyon egyszerű, ami az ADM-ből is látszik: Mindössze két réteget kezel a projekt.
 
-Első réteg: A discord-oldali réteg, ez kezeli a bementek gyújtését, a kimenetek megjelenítését, és összeségében a felhasználóval való kommunikációt.ű
+Első réteg: A Discord-oldali réteg, ez kezeli a bementek gyűjtését, a kimenetek megjelenítését, és összességében a felhasználóval való kommunikációt.ű
 
 Második-réteg: A Backend réteg, ez kezeli a játék-logikákat, az adatbázis kezelését, és persze a frontend-el való kommunikációt.
 
-Ezen rétegek közötti kapcsolatok leolvashatóak az ADM-ből.
+Ezen rétegek közötti kapcsolatok leolvashatók az ADM-ből.
 
 ## 9. Adatbázisterv
 
-A projekt rendelkezni fog egy alapszintű adatbázissal, ami tárolni fogja a felhasználók hány éles játékot játszottak, ki elllen, és azoknak a kimenetelét.
+A projekt rendelkezni fog egy alapszintű adatbázissal, ami tárolni fogja a felhasználók hány éles játékot játszottak, ki ellen, és azoknak a kimenetelét.
 
 Az adatbázis egy táblával fog rendelkezni:
 
-* Lesz egy játékos adattábla, amely tárolni fogja az összes játékos adatatait egy-egy sorban: Milyen játékból, hány mérkőzést játszottek, ebből hány nyert, döntetlen, és vesztett volt.
+* Lesz egy játékos adattábla, amely tárolni fogja az összes játékos adatait egy-egy sorban: Milyen játékból, hány mérkőzést játszottak, ebből hány nyert, döntetlen, és vesztett volt.
 
 ## 10. Implementációs terv
 
@@ -216,4 +216,4 @@ A megfelelő jogosultságokkal rendelkező felhasználó a fejlesztők által le
 
 ## 13. Karbantartási tervezet
 
-A Discord-alkalmazás üzemeltetői elmondási szerint az ún. "Slash-command"-ok hosszú távan lesznek támogatva, ezért az alkalmazást nagy valószínűséggel csak javító-frissítésekkel kell ellátni a jövőben.
+A Discord-alkalmazás üzemeltetői elmondási szerint az ún. "Slash-command"-ok hosszútávon lesznek támogatva, ezért az alkalmazást nagy valószínűséggel csak javító-frissítésekkel kell ellátni a jövőben.

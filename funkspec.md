@@ -7,7 +7,10 @@ A külső szolgáltatók túlnyomó része a naplózást nem oldotta meg, ezért
 ## 2. Vágyott rendszer
 
 A JózsefJónás Discord-szerver tulajdonosainak és tagjainak célja, hogy az összes tag számára hozzáférhető legyen egy olyan szerver-integrált megoldás (ezentúl ún. "Bot"), melyek egy lényegesen áramvonalasabb folyamattá teszik a mérkőzések szervezését és lebonyolítását. 
-Szeretnénk ha a Bot egyszerűen meghívható lenne a szerverre, ott egyszerű, és könnyen megjegyezhető parancsokkal elindítana és játékot, aminek a végén egyértelműen eldöntené a győztest és a két játékos profiljához kötné az eredményt. A bot ezen túl játékra lebontva tárolná minden játékos eredményeit, melyeket összehasnolítás, visszatekintés céljából könnyen el lehessen érni utólag és bármikor. 
+Szeretnénk ha a Bot egyszerűen meghívható lenne a szerverre, ott egyszerű, és könnyen megjegyezhető parancsokkal elindítana és játékot, aminek a végén egyértelműen eldöntené a győztest és a két játékos profiljához kötné az eredményt. A bot ezen túl játékra lebontva tárolná minden játékos eredményeit, melyeket összehasonlítás, visszatekintés céljából könnyen el lehessen érni utólag és bármikor. 
+A bot legyen felhasználóbarát, egyszerű parancsokkal kezelhető. Alapvető feltétel, a könnyebb játszhatóság, és nagyobb mértékű interakció eléréséhez, hogy a játék ún. "emote"-okkal irányítható lehessen.
+Mind a felhasználóknak, mind a szerver tulajdonosainak fontos a lehető legmagasabb rendelkezésre állás biztosítása, ami magába foglalja, hogy a szerver (és ezáltal a Bot) mindig elérhető legyen, fusson; az eredmények mindig lekérdezhetők legyenek; más szerverekre is bármikor meghívható legyen.
+
 A bot legyen felhasználóbarát, egyszerű parancsokkal kezelhető. Alapvető feltétel, a könnyebb játszhatóság, és nagyobb mértékű interakció eléréséhez, hogy a játék ún. "emote"-okkal irányítható lehessen.
 Mind a felhasználóknak, mind a szerver tulajdonosainak fontos a lehető legmagasabb rendelkezésre állás biztosítása, ami magába foglalja, hogy a szerver (és ezáltal a Bot) mindig elérhető legyen, fusson; az eredmények mindig lekérdezhetőek legyenek; más szerverekre is bármikor meghívható legyen.
 
@@ -24,7 +27,7 @@ A JózsefJónás Discord-szerver két tagja megbeszélik közösen, hogy szeretn
 
 Eldöntik, hogy milyen játékot szeretnének játszani. ->
 
-Megkereseik, hogy az adott játék milyen platformon (web-, vagy asztali akalmazás) elérhető. ->
+Megkeresik, hogy az adott játék milyen platformon (web-, vagy asztali alkalmazás) elérhető. ->
 
 A két játékos időközben kénytelen a játék idejére elhagyni a szervert, hisz a játékot csak külső "helyszínen" tudják lejátszani.
 Ekkor a legtöbb esetben már nem a szerver szolgáltatásain keresztül történik a köztük lévő kommunikáció, hanem magánbeszélgetést folytatnak. ->
@@ -68,13 +71,13 @@ A Bot adjon a felhasználóknak támpontokat az egyszerű parancsos használatho
 
 A Bot képes legyen grafikusan megjeleníteni a játék állapotát minden lépést követően.
 
-A grafikus felület legyen esztétikus, és könnyen érthelmezhető.
+A grafikus felület legyen esztétikus, és könnyen értelmezhető.
 
 A Bot használjon viszonylag kevés erőforrást.
 
 A Bot képes legyen gépi ellenfélként játszani a legegyszerűbb játékokat.
 
-A Bot működjön a JózsefJónás discord-szerver hálózat bármely szerverén.
+A Bot működjön a JózsefJónás Discord-szerver hálózat bármely szerverén.
 
 
 ## 6. Követelménylista
