@@ -20,6 +20,10 @@ async def info(inter):
 async def tictac(inter):
     await inter.response.send_message("World")
 
+@bot.command()
+async def ping(ctx):
+    await ctx.send('pong')
+
 discord_token = os.getenv('DISCORD_TOKEN')
 print(discord_token)
 bot.run(discord_token)
