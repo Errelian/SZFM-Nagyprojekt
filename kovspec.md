@@ -2,7 +2,13 @@
 
 ## 1 Jelenlegi Helyzet
 
-A JózsefJónás Discord-szerver számtalan felhasználóval rendelkezik, akik gyakran ismerkedés érdekében kölünböző játékokat szeretnének játszani egymással, de a jelenleg ezt csak harmadik féltől származó oldalakon, és alkalmazások segítségével tudják megvalósítani. Ez lehetősen megnehezíti a pontszámok esetleges nyilvántartását, és az esetleges alkalmazás váltások erősen lelassítják az egész folyamatot.
+A JózsefJónás Discord-szerver számtalan felhasználóval rendelkezik, akik gyakran ismerkedés érdekében különböző játékokat szeretnének játszani egymással, de a jelenleg ezt csak harmadik féltől származó oldalakon, és alkalmazások segítségével tudják megvalósítani. Ez jelentősen megnehezíti a pontszámok esetleges nyilvántartását, és az esetleges alkalmazás váltások erősen lelassítják az egész folyamatot.
+
+Felméréseink szerint, ezen okokból sokat esik a felhasználói elégedettség a felhasználóink szavait idézve természetesen.
+
+Jelenleg a leggyakrabban játszott, legnépszerűbb játékok:
+  * Sakk
+  * Amőba (3x3, 5x5)
 
 Felméréseink szerint, ezen okokból sokat esik a felhasználói elégedettség a felhasználóink szavait idézve természetesen.
 
@@ -60,7 +66,7 @@ A Bot használjon viszonylag kevés erőforrást.
 
 A Bot képes legyen gépi ellenfélként játszani a legegyszerűbb játékokat.
 
-A Bot működjön a JózsefJónás discord-szerver hálózat bármely szerverén.
+A Bot működjön a JózsefJónás Discord-szerver hálózat bármely szerverén.
 
 ## 6 Követelménylista
 
