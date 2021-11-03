@@ -2,7 +2,7 @@ import chess
 
 class ChessBot():
     def __init__(self): #TODO REFRACTOR THESE 3 INTO MORE OO WITH SEPARATE CLASSES ALL FANCY AND STUFF
-        self.chessGames = {}  # gameID to index (chess.Board(), white, black)
+        self.chessGames = {}  # gameID to index (chess.Board(), white, black) #TODO make into a class with 3 members: board, white, black. Needs to have a full arg contructor too.
         self.playingUsers = {}  # userID to index gameIDs
         self.usernameDict = {}  # userID to index Usernames
 
