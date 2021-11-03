@@ -15,20 +15,22 @@ async def on_ready():
     print(f"Logged in as {bot.user} (ID: {bot.user.id})")
     print("------")
 
+@bot.command()
+async def echoTaggedId(ctx, user: disnake.User):
+    await ctx.send(user.id)
 
 @bot.command()
 async def author(ctx):
     await ctx.send(ctx.author.id)
 
 
-@bot.command() #TODO REMOVE QUEUE AND MAKE IT SO YOU CAN CHALLENGE PEOPLE
-async def chess(ctx):
-    ###Starts a new game between two people in the queue
-    reply = chessBot.queue(ctx.author.id, ctx.author)
+@bot.command()
+async def chessChallenge(ctx, user: disnake.User):
+    reply = chessBot.matchup(ctx.author, user)
     await ctx.send(reply)
 
 
-@bot.command() #TODO MAKES A MOVE
+@bot.command() #MAKES A MOVE
 async def move(ctx, algNot: str):
     reply = chessBot.move(ctx.author.id, algNot)
     if reply is None:
@@ -50,17 +52,20 @@ async def legal(ctx):
 
 @bot.command() #TODO GIVES INFO ABOUT THE BOT
 async def info(ctx):
-    await ctx.send("info")
+    reply = "info"
+    await ctx.send(reply)
 
 
 @bot.command() #TODO CHALLENGES THE AI
 async def tictac(ctx):
-    await ctx.send("tictac")
+    reply = 'tictac'
+    await ctx.send(reply)
 
 
 @bot.command()
 async def ping(ctx):
-    await ctx.send('pong')
+    reply = 'pong'
+    await ctx.send(reply)
 
 discord_token = os.getenv('DISCORD_TOKEN')
 bot.run(discord_token)
