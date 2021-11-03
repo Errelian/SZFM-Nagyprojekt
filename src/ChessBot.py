@@ -26,7 +26,7 @@ class ChessBot():
 
     # returns true if a game starts, else false
     def queue(self, userID, userName) -> str:
-        if userID not in self.playingUsers and userID not in self.match_queue:  # TODO: searches array which is slow
+        if userID not in self.playingUsers and userID not in self.match_queue:
             self.user_names[userID] = userName
             self.match_queue.append(userID)
             self.user_names[userID] = userName
@@ -37,7 +37,10 @@ class ChessBot():
 
 
     def listLegalMoves(self, userID):
-        return str(self.chessGames[self.playingUsers[userID]][0].legal_moves)[37:-1]
+        if userID in self.playingUsers:
+            return str(self.chessGames[self.playingUsers[userID]][0].legal_moves)[37:-1]
+        else:
+            return "You must be in a game to ask for legal moves"
 
     def move(self, userID, san_move):
         if userID in self.playingUsers:
@@ -62,7 +65,7 @@ class ChessBot():
         else:
             return 'Unknown error'
 
-    def representation(self, userID): #generates basic ascii representation
+    def representation(self, userID): #generates basic ascii representation TODO REPLACE IT WITH A GENERATED IMAGE
         game = self.chessGames[self.playingUsers[userID]]
         boardRepresentation = f'`{game[0]}`'
 
@@ -83,6 +86,7 @@ class ChessBot():
                 del self.playingUsers[game[2]]
             del game
             return result
+        return ''
 
     def resign(self, userID):
         if userID not in self.playingUsers:

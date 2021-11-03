@@ -8,6 +8,7 @@ bot = commands.Bot(
 )
 
 chessBot = ChessBot()
+
 @bot.event
 async def on_ready():
     chessBot = ChessBot()
@@ -20,22 +21,34 @@ async def author(ctx):
     await ctx.send(ctx.author.id)
 
 
-@bot.command() #TODO STARTS A NEW GAME
+@bot.command() #TODO REMOVE QUEUE AND MAKE IT SO YOU CAN CHALLENGE PEOPLE
 async def chess(ctx):
-    response = chessBot.queue(ctx.author.id, ctx.author)
-    await ctx.send(response)
+    ###Starts a new game between two people in the queue
+    reply = chessBot.queue(ctx.author.id, ctx.author)
+    await ctx.send(reply)
 
 
 @bot.command() #TODO MAKES A MOVE
 async def move(ctx, algNot: str):
-    response = chessBot.move(ctx.author.id, algNot)
-    if response is None:
-        response = chessBot.representation(ctx.author.id)
-        response += chessBot.overCleanup()
-    await ctx.send(response)
+    reply = chessBot.move(ctx.author.id, algNot)
+    if reply is None:
+        reply = chessBot.representation(ctx.author.id)
+        reply += chessBot.overCleanup(ctx.author.id)
+    await ctx.send(reply)
 
 
-@bot.command() #TODO
+@bot.command()
+async def resign(ctx):
+    reply = chessBot.resign(ctx.author.id)
+    await ctx.send(reply)
+
+
+@bot.command()
+async def legal(ctx):
+    reply = chessBot.listLegalMoves(ctx.author.id)
+    await ctx.send(reply)
+
+@bot.command() #TODO GIVES INFO ABOUT THE BOT
 async def info(ctx):
     await ctx.send("info")
 
