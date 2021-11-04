@@ -52,9 +52,19 @@ async def legal(ctx):
 
 @bot.command() #TODO GIVES INFO ABOUT THE BOT
 async def info(ctx):
-    reply = "info"
+    reply = "This is a bot that helps you play chess against another user, or play Tic-Tac-Toe against the bot. For chess, type !chessChallenge @User. For Tic-Tac-Toe type !tictac. For more info, use !tictacInof and !chessInfo respectively"
     await ctx.send(reply)
 
+@bot.command() #TODO GIVES INFO ABOUT CHESS
+async def chessInfo(ctx):
+    reply = "!resign to resign \n !legal to get your currently legal moves. !move [algnot] to move, !chessChellange @User to begin playing "
+    await ctx.send(reply)
+
+
+@bot.command() #TODO GIVES INFO ABOUT TICTACTOE
+async def tictacInfo(ctx):
+    reply = "dummy"
+    await ctx.send(reply)
 
 @bot.command() #TODO CHALLENGES THE AI
 async def tictac(ctx):

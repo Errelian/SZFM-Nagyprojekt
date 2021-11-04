@@ -70,7 +70,6 @@ class ChessBot():
     def overCleanup(self, userID): #cleans up the game once it's over
         game = self.chessGames[self.playingUsers[userID]]
         if game.board.is_game_over():
-
             result = "\nGame over" + game.board.result()
             self.internalCleaner(game)
             return result
@@ -81,6 +80,5 @@ class ChessBot():
             return "You cannot resign if you are not in a match"
         else:
             game = self.chessGames[self.playingUsers[user.id]]
-
             self.internalCleaner(game)
             return str(user) + " has fortfeited their game, shame."
