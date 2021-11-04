@@ -8,7 +8,7 @@ bot = commands.Bot(
 )
 
 chessBot = ChessBot()
-
+#bot.get_user(userId)
 @bot.event
 async def on_ready():
     chessBot = ChessBot()
@@ -33,7 +33,7 @@ async def chessChallenge(ctx, user: disnake.User):
 @bot.command() #MAKES A MOVE
 async def move(ctx, algNot: str):
     reply = chessBot.move(ctx.author.id, algNot)
-    if reply is None:
+    if reply == "":
         reply = chessBot.representation(ctx.author.id)
         reply += chessBot.overCleanup(ctx.author.id)
     await ctx.send(reply)
@@ -41,7 +41,7 @@ async def move(ctx, algNot: str):
 
 @bot.command()
 async def resign(ctx):
-    reply = chessBot.resign(ctx.author.id)
+    reply = chessBot.resign(ctx.author)
     await ctx.send(reply)
 
 
