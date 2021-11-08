@@ -17,6 +17,8 @@ class ChessBot():
         if (user1.id not in self.playingUsers) and (user2.id not in self.playingUsers): #if neither of them are playing
             self.challenge(user1.id, user2.id)
             return self.representation(user1.id)
+        else:
+            return "One of the users is already in a game".
 
 
     def listLegalMoves(self, userID):
