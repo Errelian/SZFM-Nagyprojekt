@@ -18,7 +18,7 @@ class ChessBot():
             self.challenge(user1.id, user2.id)
             return self.representation(user1.id)
         else:
-            return "One of the users is already in a game".
+            return "One of the users is already in a game."
 
 
     def listLegalMoves(self, userID):
