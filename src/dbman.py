@@ -39,6 +39,16 @@ def create_new_user():
 
     c.execute("INSERT INTO results VALUES (?, ?, '0', '0','0','0','0','0','0','0')", (get_next_id(),user_id,) )
 
+def update_current_user():
+
+    c.execute("""
+    UPDATE results
+    SET ttt_lose = 999,
+    ttt_win = 777
+    WHERE player_id = ?;
+    """, (user_id,))
+
+
 
 
 
@@ -55,6 +65,7 @@ recieved_array = ["Aces","Chess"]
 user_id = recieved_array[0]
 game_type = recieved_array[1]
 
+
 c.execute("SELECT id FROM results WHERE player_id = ?", (user_id,))
 try:
     c.fetchone()[0] == int
@@ -63,6 +74,7 @@ except Exception as e:
     create_new_user()
 else:
     print("Found")
+    update_current_user()
 
 
 
