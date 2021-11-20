@@ -3,6 +3,7 @@
 import sqlite3
 import ChessBot
 import os.path
+import sys
 
 database_exists = os.path.isfile("scores.db")
 
@@ -39,16 +40,56 @@ def create_new_user():
 
     c.execute("INSERT INTO results VALUES (?, ?, '0', '0','0','0','0','0','0','0')", (get_next_id(),user_id,) )
 
-def update_current_user():
 
-    c.execute("""
-    UPDATE results
-    SET ttt_lose = 999,
-    ttt_win = 777
-    WHERE player_id = ?;
-    """, (user_id,))
+def update_current_user_chess():
+
+    if victory == 1:
+        c.execute("""
+        UPDATE results
+        SET chess_games = chess_games + 1,
+        chess_win = chess_win + 1
+        WHERE player_id = ?;
+        """, (user_id,))
+    elif victory == 0:
+        c.execute("""
+        UPDATE results
+        SET chess_games = chess_games + 1,
+        chess_lose = chess_lose + 1
+        WHERE player_id = ?;
+        """, (user_id,))
+    else:
+        c.execute("""
+        UPDATE results
+        SET chess_games = chess_games + 1,
+        chess_draw = chess_draw + 1
+        WHERE player_id = ?;
+        """, (user_id,))
 
 
+
+def update_current_user_ttt():
+
+        if victory == 1:
+            c.execute("""
+            UPDATE results
+            SET ttt_games = ttt_games + 1,
+            ttt_win = ttt_win + 1
+            WHERE player_id = ?;
+            """, (user_id,))
+        elif victory == 0:
+            c.execute("""
+            UPDATE results
+            SET ttt_games = ttt_games + 1,
+            ttt_lose = ttt_lose + 1
+            WHERE player_id = ?;
+            """, (user_id,))
+        else:
+            c.execute("""
+            UPDATE results
+            SET ttt_games = ttt_games + 1,
+            ttt_draw = ttt_draw + 1
+            WHERE player_id = ?;
+            """, (user_id,))
 
 
 
@@ -60,10 +101,12 @@ if database_exists == False:
 
 
 print(get_next_id())
-#user_id, type_of_game
-recieved_array = ["Aces","Chess"]
+
+#user_id, type_of_game, win=1 lose=0 draw=2
+recieved_array = ["AcesHigh37","Tic-Tac-Toe","0"]
 user_id = recieved_array[0]
 game_type = recieved_array[1]
+victory = int(recieved_array[2])
 
 
 c.execute("SELECT id FROM results WHERE player_id = ?", (user_id,))
@@ -72,9 +115,15 @@ try:
 except Exception as e:
     print("Not found")
     create_new_user()
+
+print("Found")
+if game_type == "Chess":
+    update_current_user_chess()
+elif game_type == "Tic-Tac-Toe":
+    update_current_user_ttt()
 else:
-    print("Found")
-    update_current_user()
+    sys.exit("Game type doesn't exist")
+
 
 
 
