@@ -128,4 +128,4 @@ async def place_error(ctx, error):
     if isinstance(error, commands.MissingRequiredArgument):
         await ctx.send("Nevezd meg a pozíciót amit megjelölsz.")
 
-client.run("OTEyMDU5MDcxMjIwMjkzNjQz.YZqbMw.7S_K3PaM7NzpyfDcbvPDE-nXxko")
+client.run("your-token-here")
