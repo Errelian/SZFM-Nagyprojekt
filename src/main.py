@@ -63,11 +63,11 @@ async def chessInfo(ctx):
 
 @bot.command() #TODO GIVES INFO ABOUT TICTACTOE
 async def tictacInfo(ctx):
-    reply = "dummy"
+    reply = "!place [1-9] to place your symbol on empty square, !tictactoe @USER @ME to begin playing"
     await ctx.send(reply)
 
 @bot.command() #TODO CHALLENGES THE AI
-async def tictac(ctx):
+async def place(ctx):
     reply = 'tictac'
     await ctx.send(reply)
 
