@@ -37,7 +37,7 @@ A Bot parancsokkal irányítható, amiknek a listáját a *!help* paranccsal kap
 
 *!resign* - A sakkjátszmát feladhatjuk ezzel a paranccsal.
 
-*!ping* - TODO
+*!ping* - Lényegében egy választ triggerel a bottól, ellenőrizhetjük, hogy a bot fut-e és fogadja-e a játékkéréseinket.
 
 *!tictactoe @USER @ÉN* - Az @USER-t a kihívni kívánt felhasználó nevével, az @ÉN-t a saját nevünkkel helyettesítve kezdhetjük el az amőbát, ha az még nem fut.
 
