@@ -67,7 +67,7 @@ async def tictacInfo(ctx):
     await ctx.send(reply)
 
 @bot.command() #TODO CHALLENGES THE AI
-async def place(ctx):
+async def tictac(ctx):
     reply = 'tictac'
     await ctx.send(reply)
 
