@@ -81,20 +81,20 @@ class ChessBot():
         game = self.chessGames[self.playingUsers[userID]]
         if game.board.is_stalemate():
             result = "\nGame over, stalemate."
-            self.dBase.database_handler(game.whiteID, "Chess", 2)
-            self.dBase.database_handler(game.blackID, "Chess", 2)
+            dbman.database_handler(game.whiteID, "Chess", 2)
+            dbman.dBase.database_handler(game.blackID, "Chess", 2)
             self.internalCleaner(game)
             return result
 
         elif game.board.is_game_over():
             result = "\nGame over" + game.board.result()
 
-            self.dBase.database_handler(userID, "Chess", 1)
+            dbman.database_handler(userID, "Chess", 1)
 
             if (game.whiteID == userID):
-                self.dBase.database_handler(game.blackID, "Chess", 0)
+                dbman.database_handler(game.blackID, "Chess", 0)
             else:
-                self.dBase.database_handler(game.whiteID, "Chess", 0)
+                dbman.database_handler(game.whiteID, "Chess", 0)
             self.internalCleaner(game)
             return result
         return ''
@@ -105,9 +105,9 @@ class ChessBot():
         else:
             game = self.chessGames[self.playingUsers[user.id]]
             self.internalCleaner(game)
-            self.dBase.database_handler(user.id, "Chess", 0)
+            dbman.database_handler(user.id, "Chess", 0)
             if (game.whiteID == user.id):
-                self.dBase.database_handler(game.blackID, "Chess", 1)
+                dbman.database_handler(game.blackID, "Chess", 1)
             else:
-                self.dBase.database_handler(game.whiteID, "Chess", 1)
+                dbman.database_handler(game.whiteID, "Chess", 1)
             return str(user) + " has fortfeited their game, shame."
