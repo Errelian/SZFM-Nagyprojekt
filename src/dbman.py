@@ -130,6 +130,6 @@ class DBSetup:
         self.conn.commit()
         self.conn.close()
 
-dbs = DBSetup()
+#dbs = DBSetup()
 
-dbs.database_handler("Ace33","Chess","1")
+#dbs.database_handler("Ace33","Chess","1")
