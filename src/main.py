@@ -40,7 +40,6 @@ async def move(ctx, algNot: str):
     image = None
     if reply == "":
         image = chessBot.representation(ctx.author.id)
-        #reply = chessBot.representation(ctx.author.id)
         reply = chessBot.overCleanup(ctx.author.id)
     await ctx.send(reply, file=disnake.File(image))
 
