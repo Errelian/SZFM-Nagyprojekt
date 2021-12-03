@@ -2,12 +2,13 @@ import sqlite3
 import os.path
 import sys
 
-class DBSetup:
-    def __init__(self):
-        self.database_exists = os.path.isfile("scores.db")
 
-        self.conn = sqlite3.connect('scores.db')
-        self.c = self.conn.cursor()
+def database_handler(user_id,game_type,victory):
+
+    database_exists = os.path.isfile("scores.db")
+
+    conn = sqlite3.connect('scores.db')
+    c = conn.cursor()
 
     class Result:
 
@@ -15,9 +16,9 @@ class DBSetup:
         game_type = ""
         victory = ""
 
-    def create_database(self):
+    def create_database():
 
-        self.c.execute("""CREATE TABLE results (
+        c.execute("""CREATE TABLE results (
         id integer not null primary key,
         player_id text,
         chess_games integer,
@@ -31,11 +32,11 @@ class DBSetup:
         )""")
 
 
-    def get_next_id(self):
+    def get_next_id():
 
-        self.c.execute("SELECT id FROM results ORDER BY ID DESC LIMIT 1")
+        c.execute("SELECT id FROM results ORDER BY ID DESC LIMIT 1")
         try:
-            current_id = self.c.fetchone()[0]
+            current_id = c.fetchone()[0]
         except Exception as e:
             return 0
         else:
@@ -43,93 +44,88 @@ class DBSetup:
 
 
 
-    def create_new_user(self):
+    def create_new_user():
 
-        self.c.execute("INSERT INTO results VALUES (?, ?, '0', '0','0','0','0','0','0','0')", (self.get_next_id(),self.Result.user_id,) )
+        c.execute("INSERT INTO results VALUES (?, ?, '0', '0','0','0','0','0','0','0')", (get_next_id(),Result.user_id,) )
 
 
-    def update_current_user_chess(self):
+    def update_current_user_chess():
 
-        if self.Result.victory == 1:
-            self.c.execute("""
+        if Result.victory == 1:
+            c.execute("""
             UPDATE results
             SET chess_games = chess_games + 1,
             chess_win = chess_win + 1
             WHERE player_id = ?;
-            """, (self.Result.user_id,))
-        elif self.Result.victory == 0:
-            self.c.execute("""
+            """, (Result.user_id,))
+        elif Result.victory == 0:
+            c.execute("""
             UPDATE results
             SET chess_games = chess_games + 1,
             chess_lose = chess_lose + 1
             WHERE player_id = ?;
-            """, (self.Result.user_id,))
+            """, (Result.user_id,))
         else:
-            self.c.execute("""
+            c.execute("""
             UPDATE results
             SET chess_games = chess_games + 1,
             chess_draw = chess_draw + 1
             WHERE player_id = ?;
-            """, (self.Result.user_id,))
+            """, (Result.user_id,))
 
 
 
-    def update_current_user_ttt(self):
+    def update_current_user_ttt():
 
-            if self.Result.victory == 1:
-                self.c.execute("""
+            if Result.victory == 1:
+                c.execute("""
                 UPDATE results
                 SET ttt_games = ttt_games + 1,
                 ttt_win = ttt_win + 1
                 WHERE player_id = ?;
-                """, (self.Result.user_id,))
-            elif self.Result.victory == 0:
-                self.c.execute("""
+                """, (Result.user_id,))
+            elif Result.victory == 0:
+                c.execute("""
                 UPDATE results
                 SET ttt_games = ttt_games + 1,
                 ttt_lose = ttt_lose + 1
                 WHERE player_id = ?;
-                """, (self.Result.user_id,))
+                """, (Result.user_id,))
             else:
-                self.c.execute("""
+                c.execute("""
                 UPDATE results
                 SET ttt_games = ttt_games + 1,
                 ttt_draw = ttt_draw + 1
                 WHERE player_id = ?;
-                """, (self.Result.user_id,))
+                """, (Result.user_id,))
 
 
-    def database_handler(self,user_id,game_type,victory):
 
 
-        if self.database_exists == False:
-            self.create_database()
+    if database_exists == False:
+        create_database()
 
 
-        self.Result.user_id = user_id
-        self.Result.game_type = game_type
-        self.Result.victory = int(victory)
+    Result.user_id = user_id
+    Result.game_type = game_type
+    Result.victory = int(victory)
 
-        self.c.execute("SELECT id FROM results WHERE player_id = ?", (user_id,))
-        try:
-            self.c.fetchone()[0] == int
-        except Exception as e:
-            self.create_new_user()
+    c.execute("SELECT id FROM results WHERE player_id = ?", (user_id,))
+    try:
+        c.fetchone()[0] == int
+    except Exception as e:
+        create_new_user()
 
-        if game_type == "Chess":
-            self.update_current_user_chess()
-        elif game_type == "Tic-Tac-Toe":
-            self.update_current_user_ttt()
-        else:
-            sys.exit("Game type doesn't exist")
+    if game_type == "Chess":
+        update_current_user_chess()
+    elif game_type == "Tic-Tac-Toe":
+        update_current_user_ttt()
+    else:
+        sys.exit("Game type doesn't exist")
 
-        #DEBUG write contents to console
-        self.c.execute("SELECT * FROM results")
-        print(self.c.fetchall())
+    #DEBUG write contents to console
+    c.execute("SELECT * FROM results")
+    print(c.fetchall())
 
-        self.conn.commit()
-        self.conn.close()
-
-#dbs = DBSetup()
-
-#dbs.database_handler("Ace33","Chess","1")
+    conn.commit()
+    conn.close()
