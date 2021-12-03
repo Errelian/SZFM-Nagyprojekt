@@ -27,16 +27,22 @@ async def author(ctx):
 @bot.command()
 async def chessChallenge(ctx, user: disnake.User):
     reply = chessBot.matchup(ctx.author, user)
-    await ctx.send(reply)
+    if reply != "One of the users is already in a game.":
+        await ctx.send(file=disnake.File(reply))
+        os.remove(reply)
+    else:
+        await ctx.send(reply)
 
 
 @bot.command() #MAKES A MOVE
 async def move(ctx, algNot: str):
     reply = chessBot.move(ctx.author.id, algNot)
+    image = None
     if reply == "":
-        reply = chessBot.representation(ctx.author.id)
-        reply += chessBot.overCleanup(ctx.author.id)
-    await ctx.send(reply)
+        image = chessBot.representation(ctx.author.id)
+        #reply = chessBot.representation(ctx.author.id)
+        reply = chessBot.overCleanup(ctx.author.id)
+    await ctx.send(reply, file=disnake.File(image))
 
 
 @bot.command()
