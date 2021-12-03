@@ -1,7 +1,10 @@
 import chess
+import chess.svg
+import imgkit
 
 from ChessGame import ChessGame
 import dbman
+
 
 
 class ChessBot():
@@ -53,9 +56,14 @@ class ChessBot():
             else:
                 return "Not your turn."
 
-    def representation(self, userID):  # TODO REPLACE IT WITH A GENERATED IMAGE
+    def representation(self, userID):
         game = self.chessGames[self.playingUsers[userID]]
-        boardRepresentation = "`" + str(game.board) + "`"
+        boardRepresentation = str(userID) + ".png"
+        imgkit.from_string(chess.svg.board(game.board,size=600),boardRepresentation,
+            options={
+                'width' : 605,
+                'height' : 615
+            })
 
         return boardRepresentation
 
