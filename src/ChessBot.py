@@ -82,7 +82,7 @@ class ChessBot():
         if game.board.is_stalemate():
             result = "\nGame over, stalemate."
             dbman.database_handler(game.whiteID, "Chess", 2)
-            dbman.dBase.database_handler(game.blackID, "Chess", 2)
+            dbman.database_handler(game.blackID, "Chess", 2)
             self.internalCleaner(game)
             return result
 

@@ -11,7 +11,6 @@ chessBot = ChessBot()
 #bot.get_user(userId)
 @bot.event
 async def on_ready():
-    chessBot = ChessBot()
     print(f"Logged in as {bot.user} (ID: {bot.user.id})")
     print("------")
 
