@@ -21,10 +21,10 @@ A tesztelés konklúziója, hogy mivel a csatornán megfelő értékek kerültek
 
 Az elkészült projekt az adott játék lebonyolítására képes. Hogy meggyőződjünk a helyességéről a discord bot-ot manuális tesztelésnek vetjük alá.
 
--A játékosok egymás után jönnek.
--Az adott játékos lépése a szabályoknak megfelelő.
--En passant-ra képes.
--Sáncolásra képes.
+- A játékosok egymás után jönnek.
+- Az adott játékos lépése a szabályoknak megfelelő.
+- En passant-ra képes.
+- Sáncolásra képes.
 
 ### Eredmény
 
